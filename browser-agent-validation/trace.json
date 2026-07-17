@@ -1,0 +1,106 @@
+{
+  "execution_id": "04efd467-669c-4ad4-9f96-e2eb6ef3022e",
+  "query": "What is the Model Context Protocol",
+  "events": [
+    {
+      "step": "planning",
+      "status": "SUCCESS",
+      "start_time": 1784252222.4691288,
+      "end_time": 1784252222.4692962,
+      "duration_ms": 0.16736984252929688,
+      "inputs": {
+        "query": "What is the Model Context Protocol"
+      },
+      "outputs": {
+        "search_query": "What is the Model Context Protocol",
+        "strategy": "search_and_summarize"
+      },
+      "metadata": {},
+      "error": null
+    },
+    {
+      "step": "search",
+      "status": "SUCCESS",
+      "start_time": 1784252222.469362,
+      "end_time": 1784252224.792705,
+      "duration_ms": 2323.34303855896,
+      "inputs": {
+        "search_query": "What is the Model Context Protocol",
+        "max_results": 5
+      },
+      "outputs": {
+        "results_count": 5
+      },
+      "metadata": {},
+      "error": null
+    },
+    {
+      "step": "browser",
+      "status": "SUCCESS",
+      "start_time": 1784252224.7929542,
+      "end_time": 1784252227.3206232,
+      "duration_ms": 2527.6689529418945,
+      "inputs": {
+        "urls_count": 5
+      },
+      "outputs": {
+        "fetched": 5,
+        "skipped": 0
+      },
+      "metadata": {},
+      "error": null
+    },
+    {
+      "step": "extraction",
+      "status": "SUCCESS",
+      "start_time": 1784252227.32092,
+      "end_time": 1784252227.4424682,
+      "duration_ms": 121.54817581176758,
+      "inputs": {
+        "pages_count": 5
+      },
+      "outputs": {
+        "sources_extracted": 4,
+        "context_chars": 10734
+      },
+      "metadata": {},
+      "error": null
+    },
+    {
+      "step": "reasoning",
+      "status": "SUCCESS",
+      "start_time": 1784252227.442566,
+      "end_time": 1784252295.4664161,
+      "duration_ms": 68023.85020256042,
+      "inputs": {
+        "query": "What is the Model Context Protocol",
+        "context_chars": 10734,
+        "sources_count": 4
+      },
+      "outputs": {
+        "summary_chars": 2187
+      },
+      "metadata": {},
+      "error": null
+    },
+    {
+      "step": "response",
+      "status": "SUCCESS",
+      "start_time": 1784252295.467864,
+      "end_time": 1784252295.467952,
+      "duration_ms": 0.08797645568847656,
+      "inputs": {
+        "sources_count": 4,
+        "summary_chars": 2187
+      },
+      "outputs": {
+        "status": "ok"
+      },
+      "metadata": {},
+      "error": null
+    }
+  ],
+  "total_duration_ms": 72996.66571617126,
+  "status": "SUCCESS",
+  "metadata": {}
+}

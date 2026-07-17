@@ -1,0 +1,2 @@
+{"event": "tool_start", "tool": "fetch_html", "input": "{\"url\": \"http://site-a.example.com/product\"}", "correlation_id": "38c2d17f-0eab-40b0-8c0c-8edb08edcc5a", "run_id": "b0c8fc80-8e52-4301-a82f-cebfa21aeab0", "timestamp": 1784246071.0309372}
+{"event": "tool_end", "tool": "fetch_html", "output": "{\"status\": 200}", "correlation_id": "38c2d17f-0eab-40b0-8c0c-8edb08edcc5a", "run_id": "b0c8fc80-8e52-4301-a82f-cebfa21aeab0", "timestamp": 1784246071.031414}

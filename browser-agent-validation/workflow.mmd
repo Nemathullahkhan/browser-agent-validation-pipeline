@@ -1,0 +1,31 @@
+flowchart TD
+    %% Browser Agent Workflow
+
+    user(["User Query"])
+    planning["Planning\n✓ 0 ms"]
+    search["Search\n✓ 2,323 ms"]
+    browser["Browser\n✓ 2,528 ms"]
+    extraction["Extraction\n✓ 122 ms"]
+    reasoning["Reasoning\n✓ 68,024 ms"]
+    summary(["Summary"])
+
+    user --> planning
+    planning --> search
+    search --> browser
+    browser --> extraction
+    extraction --> reasoning
+    reasoning --> summary
+
+    style user fill:#3b82f6,color:#ffffff,stroke:#3b82f6
+    style planning fill:#22c55e,color:#ffffff,stroke:#22c55e
+    style search fill:#22c55e,color:#ffffff,stroke:#22c55e
+    style browser fill:#22c55e,color:#ffffff,stroke:#22c55e
+    style extraction fill:#22c55e,color:#ffffff,stroke:#22c55e
+    style reasoning fill:#22c55e,color:#ffffff,stroke:#22c55e
+    style summary fill:#3b82f6,color:#ffffff,stroke:#3b82f6
+
+    %% Planning: ✓ 0 ms
+    %% Search: ✓ 2,323 ms
+    %% Browser: ✓ 2,528 ms
+    %% Extraction: ✓ 122 ms
+    %% Reasoning: ✓ 68,024 ms

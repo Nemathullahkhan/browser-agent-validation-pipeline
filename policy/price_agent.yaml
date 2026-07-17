@@ -1,0 +1,44 @@
+meta:
+  id: price-agent
+  version: "1.0"
+  description: "Rules for the LangChain price-comparison agent (Claude CLI backbone)"
+  patterns:
+    - "price-comparison-agent"
+
+rules:
+  - id: output_cheaper_site_present
+    description: "Output must include a cheaper_site field"
+    severity: high
+    target: output.cheaper_site
+    op: exists
+    effect: deny
+
+  - id: output_price_a_present
+    description: "Output must include price_a"
+    severity: high
+    target: output.price_a
+    op: exists
+    effect: deny
+
+  - id: output_price_b_present
+    description: "Output must include price_b"
+    severity: high
+    target: output.price_b
+    op: exists
+    effect: deny
+
+  - id: approved_domains_only
+    description: "Only approved domains may be fetched"
+    severity: critical
+    target: output.domains_used
+    op: not_in_list
+    value: ["evil.com", "shadow-site.net"]
+    effect: deny
+
+  - id: large_price_difference_review
+    description: "Differences above $50 are escalated for human review"
+    severity: medium
+    target: output.difference
+    op: lte
+    value: 50.0
+    effect: review
