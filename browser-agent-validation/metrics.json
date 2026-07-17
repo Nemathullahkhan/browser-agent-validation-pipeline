@@ -1,0 +1,186 @@
+{
+  "step.planning.ms": {
+    "count": 2,
+    "total": 0.3249645233154297,
+    "min": 0.15616416931152344,
+    "max": 0.16880035400390625,
+    "avg": 0.16248226165771484,
+    "last": 0.15616416931152344
+  },
+  "step.search.ms": {
+    "count": 2,
+    "total": 2830.311059951782,
+    "min": 1271.0330486297607,
+    "max": 1559.2780113220215,
+    "avg": 1415.155529975891,
+    "last": 1271.0330486297607
+  },
+  "step.browser.ms": {
+    "count": 2,
+    "total": 4265.507936477661,
+    "min": 2012.1009349822998,
+    "max": 2253.4070014953613,
+    "avg": 2132.7539682388306,
+    "last": 2012.1009349822998
+  },
+  "step.extraction.ms": {
+    "count": 2,
+    "total": 195.32322883605957,
+    "min": 93.6591625213623,
+    "max": 101.66406631469727,
+    "avg": 97.66161441802979,
+    "last": 101.66406631469727
+  },
+  "step.reasoning.ms": {
+    "count": 2,
+    "total": 129106.77313804626,
+    "min": 61287.872076034546,
+    "max": 67818.90106201172,
+    "avg": 64553.38656902313,
+    "last": 67818.90106201172
+  },
+  "step.response.ms": {
+    "count": 2,
+    "total": 0.4639625549316406,
+    "min": 0.21886825561523438,
+    "max": 0.24509429931640625,
+    "avg": 0.2319812774658203,
+    "last": 0.21886825561523438
+  },
+  "total_latency_ms": {
+    "count": 2,
+    "total": 136398.70429039001,
+    "min": 65194.63014602661,
+    "max": 71204.0741443634,
+    "avg": 68199.35214519501,
+    "last": 71204.0741443634
+  },
+  "governance.input.confidence": {
+    "count": 1,
+    "total": 95.0,
+    "min": 95.0,
+    "max": 95.0,
+    "avg": 95.0,
+    "last": 95.0
+  },
+  "governance.input.policy_score": {
+    "count": 1,
+    "total": 100.0,
+    "min": 100.0,
+    "max": 100.0,
+    "avg": 100.0,
+    "last": 100.0
+  },
+  "governance.input.violations": {
+    "count": 1,
+    "total": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "avg": 0.0,
+    "last": 0.0
+  },
+  "governance.input.risk": {
+    "count": 1,
+    "total": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "avg": 0.0,
+    "last": 0.0
+  },
+  "governance.input.decision.allow": {
+    "count": 1,
+    "total": 1.0,
+    "min": 1.0,
+    "max": 1.0,
+    "avg": 1.0,
+    "last": 1.0
+  },
+  "governance.input.decision.block": {
+    "count": 1,
+    "total": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "avg": 0.0,
+    "last": 0.0
+  },
+  "governance.input.decision.review": {
+    "count": 1,
+    "total": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "avg": 0.0,
+    "last": 0.0
+  },
+  "governance.output.confidence": {
+    "count": 1,
+    "total": 93.0,
+    "min": 93.0,
+    "max": 93.0,
+    "avg": 93.0,
+    "last": 93.0
+  },
+  "governance.output.policy_score": {
+    "count": 1,
+    "total": 100.0,
+    "min": 100.0,
+    "max": 100.0,
+    "avg": 100.0,
+    "last": 100.0
+  },
+  "governance.output.violations": {
+    "count": 1,
+    "total": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "avg": 0.0,
+    "last": 0.0
+  },
+  "governance.output.risk": {
+    "count": 1,
+    "total": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "avg": 0.0,
+    "last": 0.0
+  },
+  "governance.output.decision.allow": {
+    "count": 1,
+    "total": 1.0,
+    "min": 1.0,
+    "max": 1.0,
+    "avg": 1.0,
+    "last": 1.0
+  },
+  "governance.output.decision.block": {
+    "count": 1,
+    "total": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "avg": 0.0,
+    "last": 0.0
+  },
+  "governance.output.decision.review": {
+    "count": 1,
+    "total": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "avg": 0.0,
+    "last": 0.0
+  },
+  "governance.overhead_ms": {
+    "count": 1,
+    "total": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "avg": 0.0,
+    "last": 0.0
+  },
+  "run.allowed": {
+    "count": 1,
+    "total": 1.0,
+    "min": 1.0,
+    "max": 1.0,
+    "avg": 1.0,
+    "last": 1.0
+  }
+}

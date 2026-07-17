@@ -1,0 +1,312 @@
+{
+  "query": "What is a deep agent?",
+  "raw_result": {
+    "summary": "A Deep Agent is an AI system designed to handle complex, long-running tasks by combining explicit planning, persistent memory, tool execution, reusable skills, and subagent delegation. It separates planning, execution, and memory to enable autonomous operation over extended time horizons.\n\nKey characteristics of a Deep Agent include:\n\n1. **Explicit Planning**: A detailed plan or task list is maintained and updated between executed steps.\n2. **Hierarchical Delegation**: Complex tasks are broken down into specialized subtasks handled by isolated subagents.\n3. **Persistent Memory**: External storage, such as file systems, is used to store information and retrieve it later.\n4. **Specialized System Prompts**: Agent skills define decision thresholds, tool-usage patterns, and subagent spawning protocols.\n\nDeep Agents differ from \"shallow\" agents in their ability to handle complex tasks that require multiple steps, planning, and memory retention. They can autonomously execute code, access file systems, and spawn subprocesses, making them suitable for production deployments.\n\nThe term \"Deep Agent\" refers to two dimensions: the depth of contextual understanding and the depth of action capability. Deep Agents understand complex objectives, plan ahead, break tasks into subtasks, manage context over time, persist state, and leverage a workspace.\n\nIn contrast to traditional chatbots, RPA bots, or copilots, Deep Agents are designed to operate across entire business domains, execute multi-step workflows, and improve through recursive learning loops. They have persistent context about the business, execute complex tasks autonomously, and get smarter over time.\n\nThe concept of Deep Agents emerged from NimbleBrain's work deploying AI systems for mid-market companies, addressing common failure patterns in traditional chatbot or copilot deployments due to lack of understanding of the business domain.",
+    "sources": [
+      "What Is a Deep Agent? | NVIDIA",
+      "Deep Agents Explained: Building AI That Plans, Delegates... | Medium",
+      "Deep Agents: AI That Doesn't Just Advise — It... | Sophera Consulting",
+      "What is a Deep Agent? Definition, Architecture & How It... | NimbleBrain"
+    ],
+    "urls": [
+      "https://www.nvidia.com/en-eu/glossary/deep-agents/",
+      "https://sharmasaravanan.medium.com/deep-agents-explained-building-ai-that-plans-delegates-executes-92d5e695c5e0",
+      "https://sopheraconsulting.com/en/blog/deep-agents-ki-die-handelt",
+      "https://nimblebrain.ai/deep-agent/"
+    ],
+    "latency_ms": 65194.63014602661,
+    "token_usage": {},
+    "metadata": {
+      "execution_id": "eb7bb449-9895-4a44-9a0f-807d875c9b83",
+      "search_results_found": 5,
+      "urls_fetched": 4,
+      "context_chars": 12308
+    }
+  },
+  "raw_trace": {
+    "execution_id": "eb7bb449-9895-4a44-9a0f-807d875c9b83",
+    "query": "What is a deep agent?",
+    "events": [
+      {
+        "step": "planning",
+        "status": "SUCCESS",
+        "start_time": 1784314414.3427022,
+        "end_time": 1784314414.342871,
+        "duration_ms": 0.16880035400390625,
+        "inputs": {
+          "query": "What is a deep agent?"
+        },
+        "outputs": {
+          "search_query": "What is a deep agent?",
+          "strategy": "search_and_summarize"
+        },
+        "metadata": {},
+        "error": null
+      },
+      {
+        "step": "search",
+        "status": "SUCCESS",
+        "start_time": 1784314414.3429399,
+        "end_time": 1784314415.9022179,
+        "duration_ms": 1559.2780113220215,
+        "inputs": {
+          "search_query": "What is a deep agent?",
+          "max_results": 5
+        },
+        "outputs": {
+          "results_count": 5
+        },
+        "metadata": {},
+        "error": null
+      },
+      {
+        "step": "browser",
+        "status": "SUCCESS",
+        "start_time": 1784314415.902474,
+        "end_time": 1784314418.155881,
+        "duration_ms": 2253.4070014953613,
+        "inputs": {
+          "urls_count": 5
+        },
+        "outputs": {
+          "fetched": 5,
+          "skipped": 0
+        },
+        "metadata": {},
+        "error": null
+      },
+      {
+        "step": "extraction",
+        "status": "SUCCESS",
+        "start_time": 1784314418.15621,
+        "end_time": 1784314418.249869,
+        "duration_ms": 93.6591625213623,
+        "inputs": {
+          "pages_count": 5
+        },
+        "outputs": {
+          "sources_extracted": 4,
+          "context_chars": 12308
+        },
+        "metadata": {},
+        "error": null
+      },
+      {
+        "step": "reasoning",
+        "status": "SUCCESS",
+        "start_time": 1784314418.249975,
+        "end_time": 1784314479.537847,
+        "duration_ms": 61287.872076034546,
+        "inputs": {
+          "query": "What is a deep agent?",
+          "context_chars": 12308,
+          "sources_count": 4
+        },
+        "outputs": {
+          "summary_chars": 1912
+        },
+        "metadata": {},
+        "error": null
+      },
+      {
+        "step": "response",
+        "status": "SUCCESS",
+        "start_time": 1784314479.5391629,
+        "end_time": 1784314479.539408,
+        "duration_ms": 0.24509429931640625,
+        "inputs": {
+          "sources_count": 4,
+          "summary_chars": 1912
+        },
+        "outputs": {
+          "status": "ok"
+        },
+        "metadata": {},
+        "error": null
+      }
+    ],
+    "total_duration_ms": 65194.63014602661,
+    "status": "SUCCESS",
+    "metadata": {}
+  },
+  "governed_result": {
+    "summary": "A deep agent is an autonomous system designed to handle complex, multi-step tasks over long time horizons. It is characterized by its ability to plan, remember, and delegate intelligently to solve very complex problems.\n\nKey features of deep agents include:\n\n1. **Planning**: Deep agents maintain structured task plans that guide them toward their long-term goals.\n2. **Context management**: They can compress conversation history, offload large tool results, isolate context with subagents, and use prompt caching to reduce latency and cost.\n3. **Delegation**: Deep agents can delegate tasks to specialized sub-agents, each with its own clean context and domain focus.\n4. **Model-agnostic**: They work with any Large Language Model (LLM) that supports tool calling.\n5. **Production-ready**: Built on LangGraph, a streaming, persistence, checkpointing runtime, with first-class tracing, evaluation, and deployment via LangSmith.\n\nDeep agents are designed to handle tasks such as research, coding, and multi-step workflows, and can be used in various domains like scientific discovery, customer support systems, and more. They provide a powerful architecture for building sophisticated, long-running agents that can adapt and learn over time.\n\nThe Deep Agents framework is an open-source agent harness built on top of LangChain's core building blocks, providing a batteries-included solution with built-in capabilities such as sub-agents, filesystem management, context offloading, shell access, persistent memory, human-in-the-loop approval, and skills. It can be extended, overridden, or replaced to suit specific needs.\n\nIn summary, deep agents are complex systems designed to handle long-running tasks by planning, remembering, and delegating intelligently, making them a powerful tool for various applications.",
+    "sources": [
+      "Deep Agents overview - Docs by LangChain",
+      "LangChain Deep Agents: Build Agents for Complex, Multi-Step Tasks",
+      "Deep Agents | Prompt Engineering Guide",
+      "GitHub - langchain-ai/deepagents: The batteries-included agent harness. · GitHub"
+    ],
+    "urls": [
+      "https://docs.langchain.com/oss/python/deepagents/overview",
+      "https://www.langchain.com/deep-agents",
+      "https://www.promptingguide.ai/agents/deep-agents",
+      "https://github.com/langchain-ai/deepagents"
+    ],
+    "latency_ms": 71204.0741443634,
+    "token_usage": {},
+    "metadata": {
+      "execution_id": "e9d6a1db-4696-442e-b26b-ec6dff2b4fd9",
+      "search_results_found": 5,
+      "urls_fetched": 4,
+      "context_chars": 11821,
+      "agentrust": {
+        "decision": "ALLOW",
+        "confidence": 93.0,
+        "policy_score": 100.0,
+        "risk_level": "LOW",
+        "envelope_id": "1f1d9e4d-a1b7-402a-b05f-d8f224915666",
+        "input_validation": {
+          "decision": "ALLOW",
+          "confidence": 95.0,
+          "policy_score": 100.0,
+          "checks_passed": 6,
+          "checks_run": 6
+        }
+      }
+    }
+  },
+  "governed_trace": {
+    "execution_id": "e9d6a1db-4696-442e-b26b-ec6dff2b4fd9",
+    "query": "What is a deep agent?",
+    "events": [
+      {
+        "step": "planning",
+        "status": "SUCCESS",
+        "start_time": 1784314479.5736609,
+        "end_time": 1784314479.573817,
+        "duration_ms": 0.15616416931152344,
+        "inputs": {
+          "query": "What is a deep agent?"
+        },
+        "outputs": {
+          "search_query": "What is a deep agent?",
+          "strategy": "search_and_summarize"
+        },
+        "metadata": {},
+        "error": null
+      },
+      {
+        "step": "search",
+        "status": "SUCCESS",
+        "start_time": 1784314479.573897,
+        "end_time": 1784314480.84493,
+        "duration_ms": 1271.0330486297607,
+        "inputs": {
+          "search_query": "What is a deep agent?",
+          "max_results": 5
+        },
+        "outputs": {
+          "results_count": 5
+        },
+        "metadata": {},
+        "error": null
+      },
+      {
+        "step": "browser",
+        "status": "SUCCESS",
+        "start_time": 1784314480.845091,
+        "end_time": 1784314482.857192,
+        "duration_ms": 2012.1009349822998,
+        "inputs": {
+          "urls_count": 5
+        },
+        "outputs": {
+          "fetched": 5,
+          "skipped": 0
+        },
+        "metadata": {},
+        "error": null
+      },
+      {
+        "step": "extraction",
+        "status": "SUCCESS",
+        "start_time": 1784314482.857611,
+        "end_time": 1784314482.959275,
+        "duration_ms": 101.66406631469727,
+        "inputs": {
+          "pages_count": 5
+        },
+        "outputs": {
+          "sources_extracted": 4,
+          "context_chars": 11821
+        },
+        "metadata": {},
+        "error": null
+      },
+      {
+        "step": "reasoning",
+        "status": "SUCCESS",
+        "start_time": 1784314482.959379,
+        "end_time": 1784314550.77828,
+        "duration_ms": 67818.90106201172,
+        "inputs": {
+          "query": "What is a deep agent?",
+          "context_chars": 11821,
+          "sources_count": 4
+        },
+        "outputs": {
+          "summary_chars": 1814
+        },
+        "metadata": {},
+        "error": null
+      },
+      {
+        "step": "response",
+        "status": "SUCCESS",
+        "start_time": 1784314550.779051,
+        "end_time": 1784314550.77927,
+        "duration_ms": 0.21886825561523438,
+        "inputs": {
+          "sources_count": 4,
+          "summary_chars": 1814
+        },
+        "outputs": {
+          "status": "ok"
+        },
+        "metadata": {},
+        "error": null
+      }
+    ],
+    "total_duration_ms": 71204.0741443634,
+    "status": "SUCCESS",
+    "metadata": {}
+  },
+  "governed_decision": "ALLOW",
+  "input_validation": {
+    "decision": "ALLOW",
+    "confidence": 95.0,
+    "risk_level": "LOW",
+    "policy_score": 100.0,
+    "violations": [],
+    "reason": "Input validation passed",
+    "envelope_id": "d4ec1af8-234d-494a-b293-54c36d22f10b",
+    "metadata": {
+      "stage": "input",
+      "checks_run": 6,
+      "checks_passed": 6,
+      "check_names": [
+        "empty_check",
+        "length_check",
+        "injection_check",
+        "html_injection_check",
+        "code_injection_check",
+        "content_check"
+      ]
+    }
+  },
+  "output_validation": {
+    "decision": "ALLOW",
+    "confidence": 93.0,
+    "risk_level": "LOW",
+    "policy_score": 100.0,
+    "violations": [],
+    "reason": "Meets confidence and policy thresholds — approved",
+    "envelope_id": "1f1d9e4d-a1b7-402a-b05f-d8f224915666",
+    "metadata": {}
+  },
+  "governed_error": null,
+  "raw_latency_ms": 0.0,
+  "governed_latency_ms": 0.0,
+  "governance_overhead_ms": 0.0
+}

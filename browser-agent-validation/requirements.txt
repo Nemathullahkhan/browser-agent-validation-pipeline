@@ -14,6 +14,7 @@ trafilatura>=1.12.0
 
 # Data / validation
 pydantic>=2.7.0
+pyyaml>=6.0.0
 
 # CLI / UI
 typer>=0.12.0

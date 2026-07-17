@@ -1,13 +1,13 @@
 {
-  "execution_id": "56a28985-470a-4f3a-8c27-5207842600ca",
+  "execution_id": "eb7bb449-9895-4a44-9a0f-807d875c9b83",
   "query": "What is a deep agent?",
   "events": [
     {
       "step": "planning",
       "status": "SUCCESS",
-      "start_time": 1784314315.301009,
-      "end_time": 1784314315.301174,
-      "duration_ms": 0.16498565673828125,
+      "start_time": 1784314414.3427022,
+      "end_time": 1784314414.342871,
+      "duration_ms": 0.16880035400390625,
       "inputs": {
         "query": "What is a deep agent?"
       },
@@ -21,9 +21,9 @@
     {
       "step": "search",
       "status": "SUCCESS",
-      "start_time": 1784314315.301279,
-      "end_time": 1784314317.1736279,
-      "duration_ms": 1872.3487854003906,
+      "start_time": 1784314414.3429399,
+      "end_time": 1784314415.9022179,
+      "duration_ms": 1559.2780113220215,
       "inputs": {
         "search_query": "What is a deep agent?",
         "max_results": 5
@@ -37,9 +37,9 @@
     {
       "step": "browser",
       "status": "SUCCESS",
-      "start_time": 1784314317.173847,
-      "end_time": 1784314322.7592902,
-      "duration_ms": 5585.4432582855225,
+      "start_time": 1784314415.902474,
+      "end_time": 1784314418.155881,
+      "duration_ms": 2253.4070014953613,
       "inputs": {
         "urls_count": 5
       },
@@ -53,15 +53,15 @@
     {
       "step": "extraction",
       "status": "SUCCESS",
-      "start_time": 1784314322.759764,
-      "end_time": 1784314322.882689,
-      "duration_ms": 122.9250431060791,
+      "start_time": 1784314418.15621,
+      "end_time": 1784314418.249869,
+      "duration_ms": 93.6591625213623,
       "inputs": {
         "pages_count": 5
       },
       "outputs": {
         "sources_extracted": 4,
-        "context_chars": 12289
+        "context_chars": 12308
       },
       "metadata": {},
       "error": null
@@ -69,16 +69,16 @@
     {
       "step": "reasoning",
       "status": "SUCCESS",
-      "start_time": 1784314322.882796,
-      "end_time": 1784314375.7208261,
-      "duration_ms": 52838.030099868774,
+      "start_time": 1784314418.249975,
+      "end_time": 1784314479.537847,
+      "duration_ms": 61287.872076034546,
       "inputs": {
         "query": "What is a deep agent?",
-        "context_chars": 12289,
+        "context_chars": 12308,
         "sources_count": 4
       },
       "outputs": {
-        "summary_chars": 1527
+        "summary_chars": 1912
       },
       "metadata": {},
       "error": null
@@ -86,12 +86,12 @@
     {
       "step": "response",
       "status": "SUCCESS",
-      "start_time": 1784314375.721759,
-      "end_time": 1784314375.721923,
-      "duration_ms": 0.164031982421875,
+      "start_time": 1784314479.5391629,
+      "end_time": 1784314479.539408,
+      "duration_ms": 0.24509429931640625,
       "inputs": {
         "sources_count": 4,
-        "summary_chars": 1527
+        "summary_chars": 1912
       },
       "outputs": {
         "status": "ok"
@@ -100,7 +100,7 @@
       "error": null
     }
   ],
-  "total_duration_ms": 60419.07620429993,
+  "total_duration_ms": 65194.63014602661,
   "status": "SUCCESS",
   "metadata": {}
 }

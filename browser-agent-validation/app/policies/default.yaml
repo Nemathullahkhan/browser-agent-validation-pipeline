@@ -1,0 +1,43 @@
+name: default
+version: "1.0"
+description: "Default AgentTrust governance policy"
+
+penalties:
+  high: 25.0
+  medium: 10.0
+  low: 5.0
+
+thresholds:
+  block_confidence: 50.0
+  block_policy_score: 60.0
+  approve_confidence: 90.0
+  approve_combined_policy: 60.0
+  approve_combined_confidence: 70.0
+
+confidence:
+  initial: 80.0
+  short_summary_penalty: 5.0
+  no_sources_penalty: 20.0
+  invalid_url_penalty: 15.0
+  per_source_bonus: 2.0
+  max_source_bonus: 10.0
+  long_summary_bonus: 5.0
+  medium_summary_bonus: 2.0
+
+output:
+  min_summary_length: 50
+  long_summary_threshold: 500
+  medium_summary_threshold: 200
+
+input:
+  max_query_length: 2000
+
+retry:
+  max_attempts: 3
+  initial_delay_ms: 500.0
+  backoff_factor: 2.0
+  jitter: true
+  max_delay_ms: 10000.0
+  retryable_risk_levels:
+    - HIGH
+    - MEDIUM

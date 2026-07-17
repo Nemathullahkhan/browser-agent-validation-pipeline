@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from abc import ABC, abstractmethod
 
-from app.models.base import BrowserResult, ExecutionTrace
+from app.models.base import BrowserResult, ComparisonResult, ExecutionTrace
 
 
 class ComparisonRunner(ABC):
@@ -15,5 +15,5 @@ class ComparisonRunner(ABC):
         ...
 
     @abstractmethod
-    def compare(self, query: str) -> dict:
+    def compare(self, query: str) -> ComparisonResult:
         ...

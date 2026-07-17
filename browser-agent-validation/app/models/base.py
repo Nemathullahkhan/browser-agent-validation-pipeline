@@ -78,3 +78,18 @@ class AuditEvent(BaseModel):
     latency_ms: float
     violations: list[str] = Field(default_factory=list)
     metadata: dict[str, Any] = Field(default_factory=dict)
+
+
+class ComparisonResult(BaseModel):
+    query: str
+    raw_result: BrowserResult
+    raw_trace: ExecutionTrace
+    governed_result: BrowserResult | None = None
+    governed_trace: ExecutionTrace | None = None
+    governed_decision: str | None = None
+    input_validation: ValidationResult | None = None
+    output_validation: ValidationResult | None = None
+    governed_error: str | None = None
+    raw_latency_ms: float = 0.0
+    governed_latency_ms: float = 0.0
+    governance_overhead_ms: float = 0.0
